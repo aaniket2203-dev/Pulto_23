@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Raj Singh - B.Tech 1st Year CSE Student at JECRC University, Jaipur. Portfolio showcasing skills in C/C++, Robotics, Smart India Hackathon 2026, and JU Makerspace.">
+  <meta name="keywords" content="Raj Singh, Portfolio, CSE, JECRC University, C/C++, Robotics, Smart India Hackathon, Jaipur">
+  <meta name="author" content="Raj Singh">
+  <title>Raj Singh | B.Tech CSE Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <!-- Google Fonts (Clean, Modern Typography) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Primary Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient Gradient Background Orbs -->
+  <div class="ambient-glow orb-1" aria-hidden="true"></div>
+  <div class="ambient-glow orb-2" aria-hidden="true"></div>
+  <div class="ambient-glow orb-3" aria-hidden="true"></div>
+
+  <!-- ==================== HEADER & NAVBAR ==================== -->
+  <header class="navbar-header" id="navbarHeader">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand" aria-label="Raj Singh Homepage">
+        <span class="brand-badge">RS</span>
+        <span class="brand-text">Raj<span class="gradient-text">Singh</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Theme Toggle & CTA) -->
+      <div class="nav-actions">
+        <!-- Theme Switcher -->
+        <button id="themeToggle" class="icon-btn theme-toggle-btn" aria-label="Toggle dark/light theme" title="Toggle Theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.41 1.41"></path>
+            <path d="m17.66 17.66 1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="m6.34 17.66-1.41 1.41"></path>
+            <path d="m19.07 4.93-1.41 1.41"></path>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+
+        <!-- Resume Button -->
+        <button id="openResumeModalNav" class="btn btn-outline btn-sm nav-resume-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="12" y1="18" x2="12" y2="12"></line>
+            <line x1="9" y1="15" x2="12" y2="18"></line>
+            <line x1="15" y1="15" x2="12" y2="18"></line>
+          </svg>
+          <span>Resume</span>
+        </button>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="mobileNavToggle" class="icon-btn mobile-menu-btn" aria-label="Open mobile navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Overlay & Menu -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <div class="mobile-drawer-content">
+        <ul class="mobile-nav-list">
+          <li><a href="#home" class="mobile-nav-link">Home</a></li>
+          <li><a href="#about" class="mobile-nav-link">About</a></li>
+          <li><a href="#education" class="mobile-nav-link">Education</a></li>
+          <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+          <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+          <li><a href="#achievements" class="mobile-nav-link">Achievements</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-drawer-footer">
+          <button id="openResumeModalMobile" class="btn btn-primary btn-block">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Download Resume
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-section" id="home">
+      <div class="section-container hero-container">
+        <!-- Hero Text Column -->
+        <div class="hero-content reveal-fade">
+          <div class="hero-status-pill">
+            <span class="status-indicator"></span>
+            <span>Open to Tech Opportunities & Collaborations</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hello, I'm <br>
+            <span class="gradient-text hero-name">Raj Singh</span>
+          </h1>
+
+          <!-- Dynamic Typing Subtitle -->
+          <div class="hero-subtitle-wrapper">
+            <span class="subtitle-prefix">I am a </span>
+            <span class="dynamic-typing-text" id="typingText">B.Tech 1st Year CSE Student</span>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            Passionate first-year Computer Science Engineering student at JECRC University, Jaipur. Driven by curiosity in C/C++ programming, robotics, and problem solving — actively innovating through hackathons and maker communities.
+          </p>
+
+          <!-- Hero CTA Actions -->
+          <div class="hero-actions">
+            <button id="downloadResumeHero" class="btn btn-primary btn-glow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download Resume</span>
+            </button>
+
+            <a href="#contact" class="btn btn-secondary">
+              <span>Get In Touch</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Hero Location & Info Chips -->
+          <div class="hero-meta-list">
+            <div class="meta-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="meta-icon text-cyan">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Sitapura, Jaipur</span>
+            </div>
+            <div class="meta-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="meta-icon text-purple">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+              <span>JECRC University</span>
+            </div>
+            <div class="meta-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="meta-icon text-emerald">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              <span>C / C++ & Git</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Avatar Column -->
+        <div class="hero-visual reveal-slide-left">
+          <div class="hero-avatar-wrapper">
+            <div class="avatar-glow-ring"></div>
+            <img src="images/avatar.svg" alt="Raj Singh Portrait Illustration" class="hero-avatar-img">
+
+            <!-- Floating Interactive Badges -->
+            <div class="floating-badge badge-sih" title="Smart India Hackathon 2026">
+              <div class="badge-icon">🚀</div>
+              <div class="badge-info">
+                <strong>SIH 2026</strong>
+                <span>Participant</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-clubs" title="Robotics Club & JU Makerspace">
+              <div class="badge-icon">🤖</div>
+              <div class="badge-info">
+                <strong>Robotics Club</strong>
+                <span>JU Makerspace</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-academic" title="12th Board Score">
+              <div class="badge-icon">🎓</div>
+              <div class="badge-info">
+                <strong>86.2%</strong>
+                <span>Class 12th APS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="section-padding about-section" id="about">
+      <div class="section-container">
+        <!-- Section Header -->
+        <div class="section-heading text-center reveal-fade">
+          <span class="section-badge">Get To Know Me</span>
+          <h2 class="section-title">About <span class="gradient-text">Raj Singh</span></h2>
+          <p class="section-subtitle">
+            An ambitious engineer with a passion for software craftsmanship, hardware-software synergy, and leadership.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Bio Narrative Card -->
+          <div class="card about-story-card reveal-slide-up">
+            <h3 class="card-title text-gradient">Hello & Welcome!</h3>
+            <p class="paragraph">
+              I am a first-year <strong>Computer Science & Engineering student</strong> at <strong>JECRC University, Jaipur</strong>, residing in Sitapura. My journey in tech is driven by an insatiable curiosity about how high-speed computer systems operate from the ground up.
+            </p>
+            <p class="paragraph">
+              With a strong base in <strong>C and C++ languages</strong>, I love structuring efficient algorithms and logical problem solving. Beyond screen code, I am deeply involved in practical maker initiatives — serving as a core member in both the <strong>Robotics Club</strong> and <strong>JU Makerspace</strong>.
+            </p>
+            <p class="paragraph">
+              Whether it's brainstorming innovative solutions for the national <strong>Smart India Hackathon 2026</strong> or rallying teammates around complex tech challenges, I thrive at the intersection of technical excellence, teamwork, and leadership.
+            </p>
+
+            <!-- Quick Info Key-Value Table -->
+            <div class="about-info-chips">
+              <div class="info-chip">
+                <span class="chip-label">Name:</span>
+                <span class="chip-value">Raj Singh</span>
+              </div>
+              <div class="info-chip">
+                <span class="chip-label">Degree:</span>
+                <span class="chip-value">B.Tech CSE (1st Year)</span>
+              </div>
+              <div class="info-chip">
+                <span class="chip-label">University:</span>
+                <span class="chip-value">JECRC University, Jaipur</span>
+              </div>
+              <div class="info-chip">
+                <span class="chip-label">Location:</span>
+                <span class="chip-value">Sitapura, Jaipur, Rajasthan</span>
+              </div>
+              <div class="info-chip">
+                <span class="chip-label">Email:</span>
+                <a href="mailto:rajsinghup8299@gmail.com" class="chip-value chip-link">rajsinghup8299@gmail.com</a>
+              </div>
+              <div class="info-chip">
+                <span class="chip-label">Phone:</span>
+                <a href="tel:9399200945" class="chip-value chip-link">+91 9399200945</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlight Metrics & Core Pillars -->
+          <div class="about-pillars-wrapper reveal-slide-up">
+            <!-- 4 Colorful Metric Cards -->
+            <div class="metrics-grid">
+              <div class="metric-card card-cyan">
+                <div class="metric-number">1st</div>
+                <div class="metric-label">Year B.Tech CSE Scholar</div>
+              </div>
+              <div class="metric-card card-purple">
+                <div class="metric-number">86.2%</div>
+                <div class="metric-label">Class 12th Board Score</div>
+              </div>
+              <div class="metric-card card-emerald">
+                <div class="metric-number">SIH</div>
+                <div class="metric-label">Smart India Hackathon '26</div>
+              </div>
+              <div class="metric-card card-coral">
+                <div class="metric-number">2+</div>
+                <div class="metric-label">Core Tech Clubs</div>
+              </div>
+            </div>
+
+            <!-- Pillars / Strengths list -->
+            <div class="card about-values-card">
+              <h4 class="values-title">What I Bring To The Team</h4>
+              <ul class="values-list">
+                <li class="value-item">
+                  <div class="value-bullet bullet-indigo"></div>
+                  <div>
+                    <strong>Strong Foundational Mindset:</strong>
+                    Focused on deep comprehension of memory, pointers, and data structures in C/C++.
+                  </div>
+                </li>
+                <li class="value-item">
+                  <div class="value-bullet bullet-cyan"></div>
+                  <div>
+                    <strong>Hands-on Maker Ethos:</strong>
+                    Translating theoretical concepts into real robots and tangible hardware prototypes.
+                  </div>
+                </li>
+                <li class="value-item">
+                  <div class="value-bullet bullet-amber"></div>
+                  <div>
+                    <strong>Natural Leadership & Collaboration:</strong>
+                    Experienced in keeping multi-disciplinary teams motivated, focused, and aligned.
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== EDUCATION SECTION ==================== -->
+    <section class="section-padding education-section" id="education">
+      <div class="section-container">
+        <!-- Section Header -->
+        <div class="section-heading text-center reveal-fade">
+          <span class="section-badge">Academic Milestones</span>
+          <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+          <p class="section-subtitle">
+            A strong scholastic background built with academic rigor, discipline, and consistent dedication.
+          </p>
+        </div>
+
+        <!-- Timeline Container -->
+        <div class="timeline-container">
+          <!-- Timeline Item 1: JECRC University -->
+          <div class="timeline-item reveal-slide-up">
+            <div class="timeline-marker">
+              <div class="marker-dot dot-cyan"></div>
+            </div>
+            <div class="timeline-card card">
+              <div class="timeline-card-header">
+                <div>
+                  <span class="edu-badge badge-active">Currently Pursuing</span>
+                  <h3 class="edu-degree">B.Tech in Computer Science & Engineering</h3>
+                  <h4 class="edu-institution">JECRC University, Jaipur</h4>
+                </div>
+                <span class="edu-year">2025 – 2029 (1st Year)</span>
+              </div>
+              <p class="edu-desc">
+                Currently immersing in foundational computer science subjects including Problem Solving using C/C++, Discrete Mathematics, and Digital Electronics. Actively spearheading innovation initiatives at JU Makerspace and building competitive robotics projects.
+              </p>
+              <div class="edu-tags">
+                <span class="tag">Algorithms</span>
+                <span class="tag">C / C++</span>
+                <span class="tag">JU Makerspace</span>
+                <span class="tag">Robotics Club</span>
+                <span class="tag">Sitapura Campus</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: 12th Grade -->
+          <div class="timeline-item reveal-slide-up">
+            <div class="timeline-marker">
+              <div class="marker-dot dot-purple"></div>
+            </div>
+            <div class="timeline-card card">
+              <div class="timeline-card-header">
+                <div>
+                  <span class="edu-badge badge-score">86.2% Score</span>
+                  <h3 class="edu-degree">Senior Secondary (Class XII)</h3>
+                  <h4 class="edu-institution">Army Public School</h4>
+                </div>
+                <span class="edu-year">Completed 2025</span>
+              </div>
+              <p class="edu-desc">
+                Graduated with distinction with an aggregate of <strong>86.2%</strong>. Maintained an analytical focus across Mathematics, Physics, Chemistry, and Computer Science, establishing a formidable base for engineering disciplines.
+              </p>
+              <div class="edu-tags">
+                <span class="tag">CBSE</span>
+                <span class="tag">Physics</span>
+                <span class="tag">Chemistry</span>
+                <span class="tag">Mathematics</span>
+                <span class="tag">Computer Science</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: 10th Grade -->
+          <div class="timeline-item reveal-slide-up">
+            <div class="timeline-marker">
+              <div class="marker-dot dot-emerald"></div>
+            </div>
+            <div class="timeline-card card">
+              <div class="timeline-card-header">
+                <div>
+                  <span class="edu-badge badge-score">85.0% Score</span>
+                  <h3 class="edu-degree">Secondary School Examination (Class X)</h3>
+                  <h4 class="edu-institution">Army Public School</h4>
+                </div>
+                <span class="edu-year">Completed 2023</span>
+              </div>
+              <p class="edu-desc">
+                Achieved <strong>85.0%</strong> with top academic performance in Science and Mathematics, complemented by disciplined participation in inter-school co-curricular activities and teamwork programs.
+              </p>
+              <div class="edu-tags">
+                <span class="tag">CBSE</span>
+                <span class="tag">Science & Math</span>
+                <span class="tag">Discipline</span>
+                <span class="tag">Academic Merit</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section class="section-padding skills-section" id="skills">
+      <div class="section-container">
+        <!-- Section Header -->
+        <div class="section-heading text-center reveal-fade">
+          <span class="section-badge">Toolkit & Expertise</span>
+          <h2 class="section-title">Skills & <span class="gradient-text">Proficiencies</span></h2>
+          <p class="section-subtitle">
+            A balanced blend of programming languages, modern developer tools, and interpersonal leadership.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Card 1: Technical & Programming -->
+          <div class="card skill-card reveal-slide-up">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge bg-gradient-indigo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-group-title">Programming Languages</h3>
+                <span class="skill-group-sub">Core coding fundamentals</span>
+              </div>
+            </div>
+
+            <div class="skill-items-list">
+              <!-- C Language -->
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">C Language</span>
+                  <span class="skill-level">Proficient</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill fill-cyan" style="width: 85%;"></div>
+                </div>
+                <span class="skill-note">Pointers, Memory Alloc, Structures & File I/O</span>
+              </div>
+
+              <!-- C++ Language -->
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">C++ Language</span>
+                  <span class="skill-level">Strong Fundamentals</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill fill-purple" style="width: 80%;"></div>
+                </div>
+                <span class="skill-note">OOPs, STL Vectors/Maps, Algorithm Design</span>
+              </div>
+
+              <!-- Problem Solving -->
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">Problem Solving & Logic</span>
+                  <span class="skill-level">Intermediate</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill fill-emerald" style="width: 78%;"></div>
+                </div>
+                <span class="skill-note">Flowcharts, Pseudocode, Time Complexity</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 2: Developer Tools & Version Control -->
+          <div class="card skill-card reveal-slide-up">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge bg-gradient-cyan">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                  <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-group-title">Tools & Version Control</h3>
+                <span class="skill-group-sub">Workflow & collaboration</span>
+              </div>
+            </div>
+
+            <div class="skill-items-list">
+              <!-- Git -->
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">Git</span>
+                  <span class="skill-level">Proficient</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill fill-coral" style="width: 82%;"></div>
+                </div>
+                <span class="skill-note">Commits, Branches, Merging, Git CLI</span>
+              </div>
+
+              <!-- GitHub -->
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">GitHub</span>
+                  <span class="skill-level">Active</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill fill-cyan" style="width: 85%;"></div>
+                </div>
+                <span class="skill-note">Remote Repos, Pull Requests, Issues, Collaboration</span>
+              </div>
+
+              <!-- VS Code & Dev Environment -->
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">VS Code & Terminal</span>
+                  <span class="skill-level">Comfortable</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill fill-indigo" style="width: 88%;"></div>
+                </div>
+                <span class="skill-note">GCC/G++ Compilers, Debugging, Command Line</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 3: Robotics & Maker Capabilities -->
+          <div class="card skill-card reveal-slide-up">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge bg-gradient-emerald">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="11" width="18" height="10" rx="2"></rect>
+                  <circle cx="12" cy="5" r="2"></circle>
+                  <path d="M12 7v4"></path>
+                  <line x1="8" y1="16" x2="8" y2="16"></line>
+                  <line x1="16" y1="16" x2="16" y2="16"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-group-title">Robotics & Makerspace</h3>
+                <span class="skill-group-sub">Hardware & Innovation</span>
+              </div>
+            </div>
+
+            <div class="skill-items-list">
+              <div class="skill-badge-container">
+                <span class="skill-chip"><span class="chip-dot dot-emerald"></span>Robotics Club Core Member</span>
+                <span class="skill-chip"><span class="chip-dot dot-cyan"></span>JU Makerspace Innovator</span>
+                <span class="skill-chip"><span class="chip-dot dot-purple"></span>Sensors & Actuators</span>
+                <span class="skill-chip"><span class="chip-dot dot-amber"></span>Microcontroller Logic</span>
+                <span class="skill-chip"><span class="chip-dot dot-coral"></span>Hardware Prototyping</span>
+                <span class="skill-chip"><span class="chip-dot dot-indigo"></span>Smart Systems Ideation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 4: Soft Skills & Leadership -->
+          <div class="card skill-card reveal-slide-up">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge bg-gradient-purple">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-group-title">Soft Skills & Leadership</h3>
+                <span class="skill-group-sub">Interpersonal strengths</span>
+              </div>
+            </div>
+
+            <div class="skill-items-list">
+              <div class="soft-skills-grid">
+                <div class="soft-skill-pill">
+                  <span class="soft-icon">🤝</span>
+                  <div>
+                    <strong>Teamwork</strong>
+                    <p>Harmonious collaboration in fast-paced hackathons and student committees.</p>
+                  </div>
+                </div>
+                <div class="soft-skill-pill">
+                  <span class="soft-icon">👑</span>
+                  <div>
+                    <strong>Leadership</strong>
+                    <p>Taking initiative, motivating peers, and organizing maker lab activities.</p>
+                  </div>
+                </div>
+                <div class="soft-skill-pill">
+                  <span class="soft-icon">💡</span>
+                  <div>
+                    <strong>Critical Thinking</strong>
+                    <p>Deconstructing complex issues into manageable, logical milestones.</p>
+                  </div>
+                </div>
+                <div class="soft-skill-pill">
+                  <span class="soft-icon">⚡</span>
+                  <div>
+                    <strong>Fast Adaptability</strong>
+                    <p>Quick to absorb new programming concepts, libraries, and frameworks.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section class="section-padding projects-section" id="projects">
+      <div class="section-container">
+        <!-- Section Header -->
+        <div class="section-heading text-center reveal-fade">
+          <span class="section-badge">Portfolio Showcase</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">
+            A showcase of my software programs, maker initiatives, and ready-to-expand project templates.
+          </p>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="project-filters reveal-fade" role="tablist" aria-label="Project Categories">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="cpp">C / C++</button>
+          <button class="filter-btn" data-filter="robotics">Robotics & Hardware</button>
+          <button class="filter-btn" data-filter="web">Web & Tools</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Project 1: Student Record Management System (C/C++) -->
+          <div class="project-card card" data-category="cpp">
+            <div class="project-img-wrapper">
+              <img src="images/project-cpp.svg" alt="Student Record Management System in C++" class="project-img">
+              <div class="project-overlay">
+                <span class="overlay-badge">C / C++ Software</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag tag-cyan">C++</span>
+                <span class="tag tag-purple">File Handling</span>
+                <span class="tag tag-indigo">Data Structures</span>
+                <span class="tag tag-emerald">CLI</span>
+              </div>
+              <h3 class="project-title">Student Record Management System</h3>
+              <p class="project-desc">
+                A robust console-based application written in C++ that efficiently stores, retrieves, updates, and sorts student academic records using structured file streams and algorithmic lookups.
+              </p>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-outline btn-block view-project-details" data-project-id="1">
+                  <span>View Details</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Robotics Telemetry & Sensor Controller (Robotics) -->
+          <div class="project-card card" data-category="robotics">
+            <div class="project-img-wrapper">
+              <img src="images/project-robotics.svg" alt="Robotics Telemetry Controller" class="project-img">
+              <div class="project-overlay">
+                <span class="overlay-badge">Robotics Club Initiative</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag tag-emerald">C/C++</span>
+                <span class="tag tag-cyan">Robotics</span>
+                <span class="tag tag-coral">Sensors</span>
+                <span class="tag tag-purple">JU Makerspace</span>
+              </div>
+              <h3 class="project-title">Robotics Telemetry & Sensor Hub</h3>
+              <p class="project-desc">
+                An embedded prototype system exploring sensor signal acquisition, motor control PWM routines, and real-time obstacle detection algorithms built during Robotics Club and JU Makerspace sessions.
+              </p>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-outline btn-block view-project-details" data-project-id="2">
+                  <span>View Details</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Personal Developer Portfolio (Web) -->
+          <div class="project-card card" data-category="web">
+            <div class="project-img-wrapper">
+              <img src="images/project-portfolio.svg" alt="Raj Singh Portfolio Website" class="project-img">
+              <div class="project-overlay">
+                <span class="overlay-badge">Frontend Website</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag tag-purple">HTML5</span>
+                <span class="tag tag-cyan">CSS3</span>
+                <span class="tag tag-emerald">JavaScript</span>
+                <span class="tag tag-coral">Responsive UI</span>
+              </div>
+              <h3 class="project-title">Modern Personal Portfolio</h3>
+              <p class="project-desc">
+                A clean, colorful, and fully responsive personal developer portfolio engineered without third-party frameworks. Featuring dark/light theming, smooth scrolling, and interactive modules.
+              </p>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-outline btn-block view-project-details" data-project-id="3">
+                  <span>View Details</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Future Project Placeholder (Ready to add!) -->
+          <!-- NOTE FOR RAJ: Whenever you create a new project, simply copy one of the cards above or edit this placeholder! -->
+          <div class="project-card card project-placeholder-card" data-category="all cpp robotics web">
+            <div class="placeholder-content">
+              <div class="placeholder-icon-ring">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </div>
+              <h3 class="placeholder-title">Your Next Project Goes Here</h3>
+              <p class="placeholder-text">
+                Currently brainstorming and architecting exciting new C/C++, robotics, and software applications. Stay tuned for upcoming repositories!
+              </p>
+              <div class="placeholder-status-pill">
+                <span class="pulse-dot"></span>
+                <span>In Active Development</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== ACHIEVEMENTS & CLUBS SECTION ==================== -->
+    <section class="section-padding achievements-section" id="achievements">
+      <div class="section-container">
+        <!-- Section Header -->
+        <div class="section-heading text-center reveal-fade">
+          <span class="section-badge">Accomplishments & Community</span>
+          <h2 class="section-title">Achievements & <span class="gradient-text">Clubs</span></h2>
+          <p class="section-subtitle">
+            Actively participating in national hackathons and driving impact in premier student engineering organizations.
+          </p>
+        </div>
+
+        <div class="achievements-grid">
+          <!-- Achievement 1: Smart India Hackathon 2026 -->
+          <div class="achievement-card card card-glow-purple reveal-slide-up">
+            <div class="achievement-top">
+              <div class="achievement-icon-box bg-purple-soft">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-purple">
+                  <circle cx="12" cy="8" r="7"></circle>
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                </svg>
+              </div>
+              <span class="achievement-year-badge">2026</span>
+            </div>
+            <div class="achievement-body">
+              <span class="achievement-tagline text-purple">National Level Hackathon</span>
+              <h3 class="achievement-title">Smart India Hackathon 2026</h3>
+              <p class="achievement-desc">
+                Selected participant in the prestigious <strong>Smart India Hackathon (SIH) 2026</strong>. Collaborated within an agile team to tackle real-world national challenges, formulating technical system architecture, rapid prototypes, and competitive pitches.
+              </p>
+              <div class="achievement-footer-meta">
+                <span>🎯 Problem Solving</span>
+                <span>⚡ Innovation</span>
+                <span>🤝 Team Spirit</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Achievement 2: Robotics Club Core Member -->
+          <div class="achievement-card card card-glow-emerald reveal-slide-up">
+            <div class="achievement-top">
+              <div class="achievement-icon-box bg-emerald-soft">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald">
+                  <rect x="3" y="11" width="18" height="10" rx="2"></rect>
+                  <circle cx="12" cy="5" r="2"></circle>
+                  <path d="M12 7v4"></path>
+                  <line x1="8" y1="16" x2="8" y2="16"></line>
+                  <line x1="16" y1="16" x2="16" y2="16"></line>
+                </svg>
+              </div>
+              <span class="achievement-year-badge">Core Role</span>
+            </div>
+            <div class="achievement-body">
+              <span class="achievement-tagline text-emerald">Technical Organization</span>
+              <h3 class="achievement-title">Core Member – Robotics Club</h3>
+              <p class="achievement-desc">
+                Serves as a <strong>Core Member</strong> of the official Robotics Club at JECRC University. Involved in robot assembly, sensor testing, microcontroller programming, and organizing technical workshops for enthusiastic first-year peers.
+              </p>
+              <div class="achievement-footer-meta">
+                <span>🤖 Bot Fabrication</span>
+                <span>⚙️ Hardware Interfacing</span>
+                <span>👥 Peer Mentoring</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Achievement 3: JU Makerspace Core Member -->
+          <div class="achievement-card card card-glow-cyan reveal-slide-up">
+            <div class="achievement-top">
+              <div class="achievement-icon-box bg-cyan-soft">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-cyan">
+                  <path d="m18 16 4-4-4-4"></path>
+                  <path d="m6 8-4 4 4 4"></path>
+                  <path d="m14.5 4-5 16"></path>
+                </svg>
+              </div>
+              <span class="achievement-year-badge">Core Role</span>
+            </div>
+            <div class="achievement-body">
+              <span class="achievement-tagline text-cyan">Innovation Hub</span>
+              <h3 class="achievement-title">Core Member – JU Makerspace</h3>
+              <p class="achievement-desc">
+                Active core contributor in <strong>JU Makerspace</strong> — the university's flagship center for student innovation, rapid prototyping, and engineering discovery. Driving hands-on creative experiments and collaborative project showcases.
+              </p>
+              <div class="achievement-footer-meta">
+                <span>💡 Rapid Prototyping</span>
+                <span>🔬 Tech Ideation</span>
+                <span>🛠️ Maker Mindset</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Achievement 4: Academic Excellence APS -->
+          <div class="achievement-card card card-glow-amber reveal-slide-up">
+            <div class="achievement-top">
+              <div class="achievement-icon-box bg-amber-soft">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber">
+                  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path>
+                  <path d="M6 6h10"></path>
+                  <path d="M6 10h10"></path>
+                </svg>
+              </div>
+              <span class="achievement-year-badge">86.2%</span>
+            </div>
+            <div class="achievement-body">
+              <span class="achievement-tagline text-amber">Scholastic Merit</span>
+              <h3 class="achievement-title">Academic Distinction – Army Public School</h3>
+              <p class="achievement-desc">
+                Awarded top standing in 12th Senior Secondary examinations with an aggregate of <strong>86.2%</strong> and <strong>85%</strong> in 10th grade. Fostered disciplined work habits, dedication, and analytical rigor throughout school years.
+              </p>
+              <div class="achievement-footer-meta">
+                <span>📚 86.2% Class 12</span>
+                <span>🎯 85% Class 10</span>
+                <span>🎖️ Disciplined Focus</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="section-padding contact-section" id="contact">
+      <div class="section-container">
+        <!-- Section Header -->
+        <div class="section-heading text-center reveal-fade">
+          <span class="section-badge">Let's Connect</span>
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <p class="section-subtitle">
+            Have a project, hackathon opportunity, or just want to chat about tech? Feel free to drop a message!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Contact Cards -->
+          <div class="contact-info-column reveal-slide-left">
+            <h3 class="contact-info-title">Contact Information</h3>
+            <p class="contact-info-desc">
+              I am always excited to discuss software engineering, robotics projects, and collaborative initiatives. Reach out directly using the methods below!
+            </p>
+
+            <div class="contact-cards-list">
+              <!-- Email Card -->
+              <div class="card contact-channel-card">
+                <div class="channel-icon-box bg-purple-soft">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-purple">
+                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">Email Address</span>
+                  <a href="mailto:rajsinghup8299@gmail.com" class="channel-value">rajsinghup8299@gmail.com</a>
+                </div>
+                <button class="copy-btn" data-copy="rajsinghup8299@gmail.com" title="Copy email address" aria-label="Copy email">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                    <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Phone Card -->
+              <div class="card contact-channel-card">
+                <div class="channel-icon-box bg-cyan-soft">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-cyan">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">Phone & WhatsApp</span>
+                  <a href="tel:9399200945" class="channel-value">+91 9399200945</a>
+                </div>
+                <button class="copy-btn" data-copy="9399200945" title="Copy phone number" aria-label="Copy phone">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                    <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Location Card -->
+              <div class="card contact-channel-card">
+                <div class="channel-icon-box bg-emerald-soft">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">Current Location</span>
+                  <span class="channel-value">Sitapura, Jaipur, Rajasthan</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links Panel -->
+            <div class="contact-socials-wrapper">
+              <span class="socials-label">Connect on Profiles:</span>
+              <div class="socials-links-row">
+                <!-- LinkedIn Placeholder Link -->
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn Profile">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect width="4" height="12" x="2" y="9"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </a>
+                <!-- GitHub Placeholder Link -->
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub Profile">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                  </svg>
+                </a>
+                <!-- Email Direct -->
+                <a href="mailto:rajsinghup8299@gmail.com" class="social-icon-btn" title="Send Direct Email">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Contact Form -->
+          <div class="contact-form-column reveal-slide-right">
+            <div class="card contact-form-card">
+              <h3 class="form-title">Send Me A Message</h3>
+              <p class="form-subtitle">Fill out this quick form and I will get back to you shortly.</p>
+
+              <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="senderName" class="form-label">Your Name <span class="required">*</span></label>
+                    <div class="input-wrapper">
+                      <input type="text" id="senderName" name="name" class="form-input" placeholder="e.g. John Doe" required>
+                    </div>
+                    <span class="field-error" id="nameError"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="senderEmail" class="form-label">Email Address <span class="required">*</span></label>
+                    <div class="input-wrapper">
+                      <input type="email" id="senderEmail" name="email" class="form-input" placeholder="e.g. john@example.com" required>
+                    </div>
+                    <span class="field-error" id="emailError"></span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="messageSubject" class="form-label">Subject <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <input type="text" id="messageSubject" name="subject" class="form-input" placeholder="e.g. Collaboration on Robotics / C++ Project" required>
+                  </div>
+                  <span class="field-error" id="subjectError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="messageContent" class="form-label">Your Message <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <textarea id="messageContent" name="message" class="form-textarea" rows="5" placeholder="Hi Raj, I'd like to talk about..." required></textarea>
+                  </div>
+                  <span class="field-error" id="messageError"></span>
+                </div>
+
+                <button type="submit" id="submitContactBtn" class="btn btn-primary btn-block btn-glow">
+                  <span class="btn-text">Send Message</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="send-icon">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="portfolio-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand-info">
+          <a href="#home" class="footer-brand">
+            <span class="brand-badge">RS</span>
+            <span class="brand-text">Raj<span class="gradient-text">Singh</span></span>
+          </a>
+          <p class="footer-tagline">
+            B.Tech 1st Year Computer Science Engineering Student at JECRC University, Jaipur. Builder, Maker, and Team Player.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-connect-col">
+          <h4 class="footer-heading">Connect Directly</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <span>📍 Sitapura, Jaipur, Rajasthan</span>
+            </li>
+            <li>
+              <a href="mailto:rajsinghup8299@gmail.com">✉️ rajsinghup8299@gmail.com</a>
+            </li>
+            <li>
+              <a href="tel:9399200945">📞 +91 9399200945</a>
+            </li>
+          </ul>
+          <div class="footer-social-icons">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn sm" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn sm" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="mailto:rajsinghup8299@gmail.com" class="social-icon-btn sm" aria-label="Email">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="currentYear">2026</span> Raj Singh. Designed with modern HTML, CSS & JavaScript.
+        </p>
+        <button id="backToTopBtn" class="back-to-top" title="Scroll back to top" aria-label="Back to top">
+          <span>Back to Top</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ==================== RESUME MODAL ==================== -->
+  <div class="modal-backdrop" id="resumeModal" role="dialog" aria-modal="true" aria-labelledby="resumeModalTitle">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-cyan">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <h3 id="resumeModalTitle" class="modal-title">Raj Singh — Resume Summary</h3>
+        </div>
+        <button class="modal-close-btn" id="closeResumeModal" aria-label="Close modal">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <div class="modal-body printable-resume" id="resumePrintArea">
+        <!-- Resume Header -->
+        <div class="res-head">
+          <h2 class="res-name">Raj Singh</h2>
+          <p class="res-role">B.Tech 1st Year Computer Science Engineering Student</p>
+          <p class="res-contacts">
+            <span>📍 Sitapura, Jaipur, Rajasthan</span> • 
+            <span>✉️ rajsinghup8299@gmail.com</span> • 
+            <span>📞 +91 9399200945</span>
+          </p>
+        </div>
+
+        <hr class="res-divider">
+
+        <!-- Resume Section: Education -->
+        <div class="res-section">
+          <h4 class="res-sec-title">EDUCATION</h4>
+          <div class="res-entry">
+            <div class="res-entry-head">
+              <strong>B.Tech in Computer Science & Engineering</strong>
+              <span>2025 – 2029 (1st Year)</span>
+            </div>
+            <div class="res-entry-sub">JECRC University, Jaipur</div>
+          </div>
+          <div class="res-entry">
+            <div class="res-entry-head">
+              <strong>Class XII (Senior Secondary) — 86.2%</strong>
+              <span>2025</span>
+            </div>
+            <div class="res-entry-sub">Army Public School</div>
+          </div>
+          <div class="res-entry">
+            <div class="res-entry-head">
+              <strong>Class X (Secondary School) — 85.0%</strong>
+              <span>2023</span>
+            </div>
+            <div class="res-entry-sub">Army Public School</div>
+          </div>
+        </div>
+
+        <!-- Resume Section: Skills -->
+        <div class="res-section">
+          <h4 class="res-sec-title">TECHNICAL & SOFT SKILLS</h4>
+          <p><strong>Programming Languages:</strong> C, C++ (OOPs, STL, Memory Management)</p>
+          <p><strong>Tools & Version Control:</strong> Git, GitHub, VS Code, Linux/Bash basics</p>
+          <p><strong>Interpersonal & Soft Skills:</strong> Teamwork, Leadership, Problem Solving, Fast Learner</p>
+        </div>
+
+        <!-- Resume Section: Hackathons & Memberships -->
+        <div class="res-section">
+          <h4 class="res-sec-title">ACHIEVEMENTS, HACKATHONS & CLUBS</h4>
+          <p>• <strong>Smart India Hackathon 2026:</strong> Participated at the national stage formulating tech solutions.</p>
+          <p>• <strong>Robotics Club:</strong> Core Member contributing to hardware-software robotics development.</p>
+          <p>• <strong>JU Makerspace:</strong> Core Member actively creating multidisciplinary prototypes.</p>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button id="printResumeBtn" class="btn btn-outline">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect width="12" height="8" x="6" y="14"></rect></svg>
+          Print / Save PDF
+        </button>
+        <button id="directDownloadBtn" class="btn btn-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Download PDF
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ==================== PROJECT DETAILS MODAL ==================== -->
+  <div class="modal-backdrop" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="projectModalTitle" class="modal-title">Project Overview</h3>
+        <button class="modal-close-btn" id="closeProjectModal" aria-label="Close modal">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="modal-body" id="projectModalBody">
+        <!-- Dynamic Project Details Rendered by JS -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="closeProjectModalFooter">Close</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ==================== TOAST NOTIFICATION CONTAINER ==================== -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Primary JavaScript (Loads at end of body) -->
+  <script src="script.js"></script>
+</body>
+</html>
